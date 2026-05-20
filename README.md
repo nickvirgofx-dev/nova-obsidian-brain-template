@@ -2,7 +2,7 @@
 
 A public-safe starter vault for building a Nova-like Obsidian central brain for AI agents.
 
-Status: local draft v0.1.0-draft. This repository is not published until the owner explicitly creates/pushes a GitHub repo.
+Status: public-safe draft v0.1.1-draft. This template is meant to be copied, renamed, and adapted before real use.
 
 ## What This Is
 
@@ -25,12 +25,15 @@ It does not include private project notes, runtime logs, secrets, API keys, acco
 
 ## Quick Start
 
+### Use In 5 Minutes
+
 1. Copy `vault-template/` to your own Obsidian vault location.
 2. Rename the copied folder to your preferred vault name.
 3. Open the copied folder in Obsidian.
 4. Read `01_AGENT_START_HERE.md`.
 5. Replace placeholder values such as `<VAULT_ROOT>`, `<RUNTIME_ROOT>`, `<PROJECT_NAME>`, and `<TODAY>`.
 6. Give your agent the instruction from `AGENTS.md`.
+7. Create your first project through `PROJECT_INTAKE_ROUTER.md` instead of dropping notes into the vault root.
 
 Recommended local layout:
 
@@ -41,6 +44,29 @@ your-workspace/
 ```
 
 Keep generated runtime files, external clones, logs, screenshots, caches, and temporary outputs outside the Obsidian vault.
+
+## First Agent Prompt
+
+Paste this into Codex, Claude Code, or another local coding agent after you copy the template:
+
+```text
+Use this Obsidian vault as my AI agent brain.
+Read AGENTS.md first, then 01_AGENT_START_HERE.md.
+Do not scan every file. Open only the files needed for my current task.
+Do not delete or overwrite memory. Archive or propose cleanup first.
+Create or update project notes, task boards, checklists, decisions, and handoffs using the template rules.
+Stop before secrets, accounts, payments, deploys, OS repair, or broad memory rewrites.
+```
+
+## What You Get
+
+- a small Obsidian vault skeleton;
+- project routing and active-project indexes;
+- task board, checklist, current-state, decision-log, and handoff templates;
+- raw-to-wiki ingestion space;
+- concise work-log structure;
+- risk gates for public/private boundaries;
+- synthetic examples that do not include private memory.
 
 ## Repository Layout
 
@@ -82,3 +108,11 @@ Agents should stop before:
 - autonomous recurring edits beyond the user's exact request.
 
 Before publishing your own fork, run `safety/PUBLIC_EXPORT_SCRUB_CHECKLIST.md`.
+
+## Good First Workflow
+
+1. Put ideas and source material in the right project or `50_TASKS/INGESTION/raw/`.
+2. Ask the agent to create one `T###` task with a checkbox, done condition, risk, and verification.
+3. Let the agent work on one task at a time.
+4. Require a short handoff after completion.
+5. Run the scrub checklist before sharing anything publicly.

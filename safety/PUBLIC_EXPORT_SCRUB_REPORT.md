@@ -2,13 +2,15 @@
 
 Date: 2026-05-20
 
-Scope: local draft only.
+Scope: public-safe repository draft after README/quickstart polish.
 
-Status: pass for local v0.1.0-draft preparation.
+Status: pass for local v0.1.1-draft preparation.
 
 ## Current Boundary
 
-No GitHub repository creation, remote setup, push, release, package publication, deployment, account/auth/payment/secret action, or private memory export has been performed for this template draft.
+The repository has been published as a public-safe draft. This T058 update is local-only until the owner explicitly approves the exact push.
+
+No release tag, package publication, deployment, account/auth/payment/secret action, OS repair action, or private memory export has been performed for this update.
 
 ## Required File Check
 
@@ -38,7 +40,7 @@ examples/FIRST_AGENT_PROMPT.md
 
 ## Privacy And Secret Scan
 
-All targeted patterns returned zero matches in file content:
+All targeted patterns returned zero matches in tracked file content:
 
 ```text
 private email: 0
@@ -46,18 +48,23 @@ private local path: 0
 private user path: 0
 private vault folder name: 0
 private runtime folder name: 0
-private project names checked: 0
+private project name pattern A: 0
+private project name pattern B: 0
+private project name pattern C: 0
 OpenAI-style secret token pattern: 0
 API key assignment pattern: 0
 password assignment pattern: 0
 token assignment pattern: 0
 ```
 
-## Remaining Release Gate
+Note: a whole-folder scan can match Git sample-hook text inside `.git/`; the public content scan above uses tracked repository files.
 
-Before public push:
+## Remaining Push / Release Gate
+
+Before pushing this T058 update or creating any release:
 
 - review the final local diff;
-- confirm the target GitHub repository name;
+- confirm the target GitHub repository and branch;
 - run the scrub checklist again in the same work session;
-- explicitly approve the exact push action.
+- explicitly approve the exact push action;
+- do not tag a release, publish a package, deploy, or export private memory without separate explicit approval.

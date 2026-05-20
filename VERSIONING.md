@@ -18,6 +18,12 @@ Draft releases may use:
 0.1.x: public-safe Obsidian brain starter vault
 ```
 
+Current draft:
+
+```text
+0.1.1-draft: public README/quickstart polish after initial publication
+```
+
 ## Upgrade Rule
 
 When the template changes, update:
