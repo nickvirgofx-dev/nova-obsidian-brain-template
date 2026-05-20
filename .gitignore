@@ -1,0 +1,26 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Obsidian local settings are personal
+.obsidian/workspace*.json
+.obsidian/cache/
+.trash/
+
+# Runtime outputs do not belong in the vault template
+runtime/
+logs/
+reports/
+screenshots/
+external_clones/
+node_modules/
+dist/
+build/
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
