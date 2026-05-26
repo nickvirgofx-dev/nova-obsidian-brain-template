@@ -2,7 +2,7 @@
 
 A public-safe starter vault for building a Nova-like Obsidian central brain for AI agents.
 
-Status: public-safe draft v0.1.1-draft. This template is meant to be copied, renamed, and adapted before real use.
+Status: public-safe draft v0.2.0-draft prepared locally. This template is meant to be copied, renamed, and adapted before real use.
 
 ## What This Is
 
@@ -13,6 +13,10 @@ This template helps you create a central memory workspace where AI agents can:
 - preserve work before cleanup;
 - separate raw sources from processed knowledge;
 - stop before risky actions;
+- ask the right amount of clarification for task size/risk;
+- use a compact context contract before meaningful edits;
+- frame serious work with Goal and Rider;
+- classify meaningful actions as allow/warn/review/block;
 - sync completed work back into Obsidian notes.
 
 It is designed for Codex, Claude Code, and similar coding agents that can read and edit local Markdown files.
@@ -94,6 +98,30 @@ The brain has six practical layers:
 
 Small tasks can use a compact path. Large repo or game tasks should use more of the stack.
 
+For serious work, use the v1.8 task shape:
+
+```text
+Goal:
+Rider:
+Done when:
+Verification:
+Stop rule:
+Recommended intelligence:
+```
+
+Before meaningful edits, ask the agent to state a compact context contract:
+
+```text
+user_goal:
+project:
+primary_state_files:
+exact_source_files:
+runtime_or_repo_evidence:
+verification_target:
+excluded_context:
+stop_rules:
+```
+
 ## Safety Boundary
 
 Agents should stop before:
@@ -105,6 +133,7 @@ Agents should stop before:
 - account, auth, payment, or secret handling;
 - browser account actions;
 - OS repair;
+- MCP registration, hooks, global config changes, or database/index migrations;
 - autonomous recurring edits beyond the user's exact request.
 
 Before publishing your own fork, run `safety/PUBLIC_EXPORT_SCRUB_CHECKLIST.md`.

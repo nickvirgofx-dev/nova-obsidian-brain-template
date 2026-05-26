@@ -15,13 +15,13 @@ Draft releases may use:
 ## Current Line
 
 ```text
-0.1.x: public-safe Obsidian brain starter vault
+0.2.x: public-safe Obsidian brain starter vault with Nova v1.8 context, risk, and verification gates
 ```
 
 Current draft:
 
 ```text
-0.1.1-draft: public README/quickstart polish after initial publication
+0.2.0-draft: Nova v1.8 template alignment with context contract, Goal/Rider task shape, adaptive clarification, action verdicts, and expanded risk gates
 ```
 
 ## Upgrade Rule
